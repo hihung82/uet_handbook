@@ -1,7 +1,3 @@
-"""
-Utility functions for crawler.
-"""
-
 from __future__ import annotations
 from urllib.parse import urlparse
 import hashlib
