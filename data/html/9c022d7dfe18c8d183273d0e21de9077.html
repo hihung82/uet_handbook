@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../nav.css">
+    <link rel="stylesheet" href="../footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Các cổng thông tin hữu ích</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="nav-bar">
+        <div class="nav">
+            <img src="../images/logo.png" alt="logo" class="logo" />
+            <button class="menu-button" onclick="showNav()"><i class="fa fa-bars"></i></button>
+        </div>
+        <div id="nav-items" class="nav-items">
+            <buton class="nav-item">
+                <a href="../lịch sử - truyền thống/" style="color:white; text-decoration: none;">Lịch sử - Truyển
+                    thống</a>
+            </buton>
+            <buton class="nav-item" id="hoc-tap" onclick="dropDown('hoc-tap')">
+                <p>Học tập</p>
+                <div class="dropdown-content">
+                    <a href="../Thư viện/">Thư viện UET</a>
+                    <a href="../Nội quy - quy chế/">Nội quy - Quy chế</a>
+                    <a href="../Kế hoạch học tập 2025-2026.pdf">Kế hoạch học tập</a>
+                    <a
+                        href="https://vnueduvn-my.sharepoint.com/:x:/g/personal/dungnn09_vnu_edu_vn/Ea_6pFpGWIRJlMrQVsBX7hEBGhWjl9Xuo6M0gOpVmvUg5A?rtime=Uh-O2Pii3Eg">Tra
+                        cứu chuẩn đầu ra</a>
+                </div>
+            </buton>
+            <buton class="nav-item" id="dong-hanh-cung-sv" onclick="dropDown('dong-hanh-cung-sv')">
+                <p>Dành cho sinh viên</p>
+                <div class="dropdown-content">
+                    <a href="https://ctsv.uet.vnu.edu.vn:3300/">Đặt lịch đối thoại - Đặt câu hỏi</a>
+
+                    <a href="../Học bổng/">Học bổng - Điểm rèn luyện</a>
+                    <a href="https://vieclam.uet.vnu.edu.vn/ ">Tuyển dụng - Việc làm</a>
+                    <a href="../Ký túc xá/">Ký túc xá</a>
+                    <a href="../Khám chữa bệnh/">Khám chữa bệnh</a>
+                    <a href="../Thực tập thực tế/">Thực tập - Thực tế</a>
+                    <a href="../Trao đổi sinh viên/">Trao đổi sinh viên</a>
+                    <a href="../Học phí - Chế độ chính sách/">Học phí - Chế độ chính sách</a>
+                    <a href="../Thủ tục hành chính một cửa/">Thủ tục hành chính một cửa</a>
+                    <a href="../các cổng thông tin hữu ích/">Các cổng thông tin hữu ích</a>
+                    <a href="https://ctsv.uet.vnu.edu.vn:3100/">Thông tin nhà trọ</a>
+                    <a href="../Hoạt động Đoàn-Hội/">Thông tin về Đoàn - Hội</a>
+                </div>
+            </buton>
+            <buton class="nav-item" id="danh-cho-hv/ncs" onclick="dropDown('danh-cho-hv/ncs')">
+                <p>Dành cho HV/NCS</p>
+                <div class="dropdown-content">
+                    <a href="https://uet.vnu.edu.vn/category/dao-tao/dao-tao-sau-dai-hoc/">Thông báo</a>
+                    <a href="https://uet.vnu.edu.vn/category/van-ban-bieu-mau/ ">Văn bản, biểu mẫu</a>
+                    <a href="https://drive.google.com/drive/folders/1_WNbru-310wnBAKRCwA5Xy2l9thzlIiy?usp=sharing">Nội
+                        quy – Quy chế</a>
+                    <a href="./../Kế hoạch học tập 2025-2026.pdf">Kế
+                        hoạch học tập</a>
+                    <a href=" https://drive.google.com/file/d/1veVCVwmIe6nhwX5X4EER_WcsIApyK11f/view?usp=sharing">Định
+                        mức học phí</a>
+                </div>
+            </buton>
+            <buton class="nav-item">
+                <a href="./../Cẩm nang sức khỏe tinh thần cho SV (1).pdf"
+                    style="color: white; text-decoration: none">Cẩm nang sức
+                    khỏe</a>
+            </buton>
+            <buton class="nav-item">
+                <a href="https://ctsv.uet.vnu.edu.vn:4000/login" style="color: white; text-decoration: none">Khảo sát
+                    người học</a>
+            </buton>
+            <buton class="nav-item">
+                <a href="../Thông tin liên hệ/" style="color:white; text-decoration: none;">Thông tin liên hệ</a>
+            </buton>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="component">
+            <div class="item"><a class="link" href="https://uet.vnu.edu.vn/">Website chính của UET</a></div>
+            <div class="item"><a class="link" href="https://idp.vnu.edu.vn/">Hệ thống thư điện tử</a></div>
+            <div class="item"><a class="link" href="https://daotao.vnu.edu.vn/dkmh/">Cổng thông tin đào tạo</a></div>
+            <div class="item"><a class="link" href="https://ctsv.uet.vnu.edu.vn:3300/trang-sinh-vien">Hệ thống hỏi đáp
+                    trực tuyến</a></div>
+            <div class="item"><a class="link" href="http://112.137.129.87/qldt/">Hệ thống tra cứu đăng ký môn học</a>
+            </div>
+            <div class="item"><a class="link" href="http://112.137.129.115/tkb/index.php">Hệ thống tra cứu thời khóa
+                    biểu</a></div>
+            <div class="item"><a class="link" href="http://112.137.129.87/congdaotao/module/dsthi/">Hệ thống tra cứu
+                    danh sách thi</a>
+            </div>
+            <div class="item"><a class="link" href="http://112.137.129.30/viewgrade/">Hệ thống tra cứu điểm thi</a>
+            </div>
+        </div>
+        <img src="./../images/caccongthongtinhuuich.jpg" alt="" class="img-responsive" />
+    </div>
+
+    <!-- footer -->
+
+    <div class="footer">
+        <div class="address">
+            <p>Phòng 104-E3, 144 Xuân Thủy, Cầu Giấy, Hà Nội</p>
+            <p>Email: ctsv_dhcn@vnu.edu.vn</p>
+            <p>ĐT: 02437548864</p>
+        </div>
+        <div class="actor">
+            <p>Biên tập: Phòng CTSV</p>
+            <p>Thiết kế: SV Trường ĐHCN</p>
+        </div>
+    </div>
+
+    <script src="../menuButton.js"></script>
+    <script src="../dropDown.js"></script>
+</body>
+
+</html>

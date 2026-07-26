@@ -1,0 +1,31 @@
+# UET Chatbot - RAG System
+
+Chatbot hỏi đáp thông tin Trường Đại học Công nghệ - ĐHQGHN (UET) sử dụng RAG.
+
+
+# Các bước
+
+* Crawl dữ liệu từ website UET.
+* Parse HTML, PDF, DOC, DOCX.
+* Chunk tài liệu kèm metadata (title, chapter, article).
+* Semantic Search bằng BGE-M3 + FAISS.
+* Keyword Search bằng BM25.
+* Hybrid Retrieval bằng WRRF.
+* Rerank kết quả bằng BGE Reranker v2-m3.
+* Sinh câu trả lời bằng Qwen2.5-3B-Instruct.
+* Giao diện chat bằng Streamlit.
+
+## Chạy
+
+Upload file rag_gg_colab lên google colab 
+
+Mở GPU rồi RUN ALL
+
+Tại VScode
+
+pip install -r requirements.txt
+streamlit run app.py
+
+## Pipeline
+
+User Question → Hybrid Retrieval → Reranking → Qwen Generation → Answer

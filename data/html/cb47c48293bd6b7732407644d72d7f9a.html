@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../nav.css">
+    <link rel="stylesheet" href="../footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Thư viện</title>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <div class="nav-bar">
+        <div class="nav">
+            <img src="../images/logo.png" alt="logo" class="logo" />
+            <button class="menu-button" onclick="showNav()"><i class="fa fa-bars"></i></button>
+        </div>
+        <div id="nav-items" class="nav-items">
+            <buton class="nav-item">
+                <a href="../lịch sử - truyền thống/" style="color:white; text-decoration: none;">Lịch sử - Truyển
+                    thống</a>
+            </buton>
+            <buton class="nav-item" id="hoc-tap" onclick="dropDown('hoc-tap')">
+                <p>Học tập</p>
+                <div class="dropdown-content">
+                    <a href="../Thư viện/">Thư viện UET</a>
+                    <a href="../Nội quy - quy chế/">Nội quy - Quy chế</a>
+                    <a href="../Kế hoạch học tập 2025-2026.pdf">Kế hoạch học tập</a>
+                    <a
+                        href="https://vnueduvn-my.sharepoint.com/:x:/g/personal/dungnn09_vnu_edu_vn/Ea_6pFpGWIRJlMrQVsBX7hEBGhWjl9Xuo6M0gOpVmvUg5A?rtime=Uh-O2Pii3Eg">Tra
+                        cứu chuẩn đầu ra</a>
+                </div>
+            </buton>
+            <buton class="nav-item" id="dong-hanh-cung-sv" onclick="dropDown('dong-hanh-cung-sv')">
+                <p>Dành cho sinh viên</p>
+                <div class="dropdown-content">
+                    <a href="https://ctsv.uet.vnu.edu.vn:3300/">Đặt lịch đối thoại - Đặt câu hỏi</a>
+
+                    <a href="../Học bổng/">Học bổng - Điểm rèn luyện</a>
+                    <a href="https://vieclam.uet.vnu.edu.vn/ ">Tuyển dụng - Việc làm</a>
+                    <a href="../Ký túc xá/">Ký túc xá</a>
+                    <a href="../Khám chữa bệnh/">Khám chữa bệnh</a>
+                    <a href="../Thực tập thực tế/">Thực tập - Thực tế</a>
+                    <a href="../Trao đổi sinh viên/">Trao đổi sinh viên</a>
+                    <a href="../Học phí - Chế độ chính sách/">Học phí - Chế độ chính sách</a>
+                    <a href="../Thủ tục hành chính một cửa/">Thủ tục hành chính một cửa</a>
+                    <a href="../các cổng thông tin hữu ích/">Các cổng thông tin hữu ích</a>
+                    <a href="https://ctsv.uet.vnu.edu.vn:3100/">Thông tin nhà trọ</a>
+                    <a href="../Hoạt động Đoàn-Hội/">Thông tin về Đoàn - Hội</a>
+                </div>
+            </buton>
+            <buton class="nav-item" id="danh-cho-hv/ncs" onclick="dropDown('danh-cho-hv/ncs')">
+                <p>Dành cho HV/NCS</p>
+                <div class="dropdown-content">
+                    <a href="https://uet.vnu.edu.vn/category/dao-tao/dao-tao-sau-dai-hoc/">Thông báo</a>
+                    <a href="https://uet.vnu.edu.vn/category/van-ban-bieu-mau/ ">Văn bản, biểu mẫu</a>
+                    <a href="https://drive.google.com/drive/folders/1_WNbru-310wnBAKRCwA5Xy2l9thzlIiy?usp=sharing">Nội
+                        quy – Quy chế</a>
+                    <a href="https://drive.google.com/drive/folders/1FceKtQE3qS3l1rlqxrQedTYQ17AL1lvg?usp=sharing ">Kế
+                        hoạch học tập</a>
+                    <a href=" https://drive.google.com/file/d/1veVCVwmIe6nhwX5X4EER_WcsIApyK11f/view?usp=sharing">Định
+                        mức học phí</a>
+                </div>
+            </buton>
+            <buton class="nav-item">
+                <a href="./../Cẩm nang sức khỏe tinh thần cho SV (1).pdf"
+                    style="color: white; text-decoration: none">Cẩm nang sức
+                    khỏe</a>
+            </buton>
+            <buton class="nav-item">
+                <a href="https://ctsv.uet.vnu.edu.vn:4000/login" style="color: white; text-decoration: none">Khảo sát
+                    người học</a>
+            </buton>
+            <buton class="nav-item">
+                <a href="../Thông tin liên hệ/" style="color:white; text-decoration: none;">Thông tin liên hệ</a>
+            </buton>
+        </div>
+    </div>
+
+    <!-- main content -->
+    <div class="main-content">
+        <div class="home-body body-container">
+            <div class="content">
+                <div class="content-order">
+                    <p style="padding: 2px 0px 4px 0px">1. Trung tâm Thư viện và Tri thức số là cơ sở hợp nhất các thư
+                        viện của các trường đại học thuộc
+                        ĐHQGHN,
+                        được sử dụng chung cho tất cả sinh viên các trường. Tại đây, sinh viên có thể sử dụng thẻ sinh
+                        viên để liên hệ để mượn sách, giáo trình và các tài liệu tham khảo khác. Ngoài ra, sinh viên có
+                        thể truy cập vào Website: <a class="web-link"
+                            href="https://lic.vnu.edu.vn/">https://lic.vnu.edu.vn/</a>, đăng nhập bằng tài khoản Email
+                        do nhà trường cấp để tìm đọc các tài liệu trên nền tảng số.</p>
+                    <p style="padding: 2px">Địa chỉ: Tòa nhà C1T, ĐHQGHN, 144 Xuân Thủy</p>
+                    <p style="padding: 2px">ĐT: <a class="web-link" href="tel:02437546545">024 3754 6545</a></p>
+                    <p style="padding: 2px">Email: <a class="web-link" href="mailto:lic@vnu.edu.vn">lic@vnu.edu.vn</a>
+                    </p>
+                </div>
+            </div>
+            <div class="content" style="margin-top: 30px;">
+                <div class="content-order">
+                    <p style="padding: 2px 0px 4px 0px">2. Phòng đọc, thư viện Hội sinh viên: Là phòng đọc do CLB Thư
+                        viện của Hội sinh viên Trường ĐH
+                        Công nghệ tổ chức. Tại đây, sinh viên có thể liên hệ để mượn các loại giáo trình, sách tham
+                        khỏa, luận văn, luận án.</p>
+                    <p style="padding: 2px">Địa chỉ: Phòng 201, 202 GDD3, số 8 Tôn Thất Thuyết</p>
+                    <p style="padding: 2px">Thời gian: sáng từ 8h-11h, chiều từ 14h-17h các ngày từ thứ Hai đến thứ Sáu
+                    </p>
+                    <p style="padding: 2px">ĐT: <a class="web-link" href="tel:02437547528">024 3754 7528</a> (Văn phòng
+                        đoàn)</p>
+                    <p style="padding: 2px">Email: <a class="web-link"
+                            href="mailto:thuvienhsv.uet@gmail.com">thuvienhsv.uet@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="address">
+            <p style="margin-top:0px;">Phòng 104-E3, 144 Xuân Thủy, Cầu Giấy, Hà Nội</p>
+            <p>Email: ctsv_dhcn@vnu.edu.vn</p>
+            <p>ĐT: 02437548864</p>
+        </div>
+        <div class="actor">
+            <p>Biên tập: Phòng CTSV</p>
+            <p>Thiết kế: SV Trường ĐHCN</p>
+        </div>
+    </div>
+
+    <script src="../menuButton.js"></script>
+    <script src="../dropDown.js"></script>
+</body>
+
+</html>

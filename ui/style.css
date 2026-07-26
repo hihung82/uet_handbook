@@ -1,0 +1,146 @@
+#MainMenu{
+    visibility:hidden;
+}
+
+header{
+    visibility:hidden;
+}
+
+footer{
+    visibility:hidden;
+}
+
+html,
+body,
+[class*="css"]{
+    font-family:"Segoe UI",sans-serif;
+}
+
+
+.stApp{
+    background:#f5f9ff;
+}
+
+.block-container{
+    max-width:950px;
+    padding-top:20px;
+}
+
+section[data-testid="stSidebar"]{
+    background:#0B5ED7;
+}
+
+section[data-testid="stSidebar"] *{
+    color:white;
+}
+
+
+h1{
+    color:#0B5ED7 !important;
+    font-weight:700;
+}
+
+
+[data-testid="stChatMessage"]{
+
+    border-radius:18px;
+
+    padding:14px;
+
+    margin-bottom:15px;
+
+}
+
+
+[data-testid="stChatMessage"]:has(div[data-testid="chatAvatarIcon-user"]){
+
+    background:#dbeafe;
+
+}
+
+
+[data-testid="stChatMessage"]:has(div[data-testid="chatAvatarIcon-assistant"]){
+
+    background:white;
+
+    border:1px solid #d9e8ff;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.05);
+
+}
+
+
+.stChatInput{
+
+    margin-top:15px;
+
+}
+
+.stChatInput textarea{
+
+    border-radius:22px !important;
+
+    border:1px solid #c7dafb !important;
+
+}
+
+
+details{
+
+    border-radius:12px;
+
+    background:#eef5ff;
+
+    border:1px solid #d9e8ff;
+
+}
+
+summary{
+
+    font-weight:600;
+
+    color:#0B5ED7;
+
+}
+
+
+
+.stSpinner{
+
+    color:#0B5ED7;
+
+}
+
+
+.stButton>button{
+
+    background:#0B5ED7;
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+}
+
+.stButton>button:hover{
+
+    background:#084298;
+
+}
+
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#0B5ED7;
+
+    border-radius:20px;
+
+}
